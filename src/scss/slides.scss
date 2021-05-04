@@ -1,0 +1,45 @@
+.slides {
+  padding: 94px 0 95px;
+  background: #ed4c5c;
+  &__title {
+    width: 90%;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    color: transparent;
+    margin-top: 28px;
+    color: #ffffff;
+  }
+  &__subtitle {
+    width: 90%;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: justify;
+    color: transparent;
+    margin: 40px 0 44px;
+    color: #000000;
+    filter: invert(100%);
+  }
+  &__platforms {
+    width: 150px;
+    line-height: 6px;
+    display: flex;
+    &-part {
+      margin-right: 25px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+  &__row {
+    display: flex;
+  }
+  &__col6 {
+    width: 50%;
+    position: relative;
+    &-second {
+      background: url("../images/slides/Slider.png") top left/100% 100%
+        no-repeat;
+    }
+  }
+}

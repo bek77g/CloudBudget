@@ -1,0 +1,104 @@
+.contact {
+  padding: 117px 0 78px;
+  margin-bottom: 45px;
+  &__title {
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+  }
+  &__subtitle {
+    margin-top: 50px;
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    width: 400px;
+    text-align: justify;
+  }
+  &__row {
+    display: flex;
+  }
+  &__col6 {
+    width: 50%;
+    height: 311px;
+    position: relative;
+  }
+}
+
+.form {
+  width: 540px;
+  height: 305px;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__part {
+    width: 100%;
+    border-radius: 6px;
+    padding: 16px 31px;
+    line-height: 19px;
+    background-color: transparent;
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #333333;
+    margin-bottom: 24px;
+    &:valid:not(:placeholder-shown) {
+      border: 1px solid green;
+    }
+    &:invalid:not(:placeholder-shown) {
+      border: 1px solid red;
+    }
+    &-names {
+      width: 255px;
+    }
+  }
+  &__select {
+    color: rgba(19, 39, 67, 0.5);
+    width: 100%;
+    border-radius: 6px;
+    padding: 16px 31px;
+    line-height: 19px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #333333;
+    &-options {
+      color: #101010;
+    }
+  }
+  &__button {
+    background: #ed4c5c;
+    color: #ffffff;
+    width: 160px;
+    height: 50px;
+    border: 1.5px solid #ed4c5c;
+    border-radius: 6px;
+    outline: none;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-top: 27px;
+    &:hover {
+      background-color: #c93c4a;
+    }
+  }
+}
+
+.dd-container {
+  position: relative;
+}
+
+.dd-select {
+  position: relative;
+  cursor: pointer;
+  background: transparent;
+  width: 90px;
+}

@@ -1,0 +1,60 @@
+.technology {
+  padding: 63px 0 104px;
+  background: #ffffff;
+  &__title {
+    margin-bottom: 70px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+  }
+  &__col {
+    height: 226px;
+    background: top lefts/100% 100% no-repeat;
+  }
+  &__backnumbs {
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 120px;
+    text-align: center;
+    color: #10101073;
+    filter: opacity(20%);
+    z-index: -1;
+  }
+  &__logcard {
+    display: flex;
+    &-1 {
+      margin: -60px auto 0;
+      width: 80px;
+      height: 80px;
+    }
+    &-2 {
+      margin: -55px auto 8px;
+      width: 66px;
+      height: 66px;
+    }
+    &-3 {
+      margin: -52px auto 17px;
+      width: 47px;
+      height: 54px;
+    }
+    &-4 {
+      margin: -60px auto 10px;
+      width: 70px;
+      height: 70px;
+    }
+  }
+  &__logcard-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+  }
+  &__logcard-subtitle {
+    font-weight: normal;
+    font-size: 12px;
+    margin: 10px 0 4px;
+    line-height: 14px;
+    text-align: center;
+  }
+}

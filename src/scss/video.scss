@@ -1,0 +1,79 @@
+@mixin text($ln) {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #000000;
+  line-height: $ln;
+}
+
+.video {
+  padding: 94px 0 95px;
+  &__title {
+    @include text(43px);
+    margin-top: 46px;
+    font-weight: 600;
+    font-size: 36px;
+  }
+  &__subtitle {
+    @include text(140%);
+    margin: 25px 0;
+  }
+  &__learn-more {
+    @include text(140%);
+    font-size: 14px;
+    color: #ca414e;
+    text-decoration: none;
+  }
+  &__row {
+    display: flex;
+  }
+  &__col6 {
+    position: relative;
+    &-second {
+      background: url("../images/video/Video_bg.png") top left/100% 100%
+        no-repeat;
+      height: 311px;
+    }
+  }
+  &__playbtn {
+    display: inline-block;
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background-color: #ca414e;
+    color: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+    cursor: pointer;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      transition: 0.4s;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &:hover::before {
+      background-color: #ed4c5c80;
+      border: 16px solid #ed4c5c80;
+      border-radius: 50%;
+      transition: 0.4s;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      background: url("../images/video/PlaySolid.svg") no-repeat;
+      top: 25px;
+      left: 28px;
+    }
+  }
+}
